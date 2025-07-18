@@ -8,31 +8,44 @@
     body {
       margin: 0;
       font-family: 'Arial', sans-serif;
-      background: linear-gradient(to right, #ffe6f0, #e6f7ff);
+      background: linear-gradient(to right, #fff0f5, #e6f7ff);
       color: #333;
       text-align: center;
     }
     .container {
-      padding: 50px 20px;
+      padding: 40px 20px;
     }
     h1 {
       font-size: 2.5rem;
       color: #d6336c;
     }
-    .message {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 30px auto;
+    h2 {
+      font-size: 1.8rem;
+      color: #444;
+      margin-top: 60px;
     }
-    .gallery img {
+    .section {
+      margin: 40px auto;
+      max-width: 700px;
+    }
+    .media {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 10px;
       max-width: 100%;
       height: auto;
-      border-radius: 12px;
-      margin: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .media:hover {
+      transform: scale(1.03);
+    }
+    .hidden {
+      display: none;
+      margin-top: 15px;
     }
     .footer {
-      margin-top: 40px;
+      margin-top: 60px;
       font-size: 0.9rem;
       color: #666;
     }
@@ -41,19 +54,61 @@
 <body>
   <div class="container">
     <h1>Happy Birthday, My Love ❤️</h1>
-    <div class="message">
-      <p>Today is your day — your first birthday as my wife. And even though we're miles apart, you are right here with me in my heart.</p>
-      <p>Every moment with you, even across the distance, is a gift. I love you more than words can say, and I can't wait for all the birthdays we'll share side by side.</p>
-      <p>This is just a little corner of the internet, made just for you — because you deserve something made with love.</p>
+
+    <h2>2019 – The Year It All Began</h2>
+
+    <div class="section">
+      <img src="2019/2019 - 1 entry/IMG_20181123_072806.jpg" alt="First entry" class="media" onclick="toggleVisibility('text2019_1')" />
+      <div id="text2019_1" class="hidden">
+        <p>This was where it started – two people, one spark, and a future we didn’t even see coming yet.</p>
+      </div>
+
+      <img src="2019/2019 - 2 calyxta sleeping/IMG-20190128-WA0001.jpg" alt="Calyxta sleeping" class="media" onclick="toggleVisibility('text2019_2')" />
+      <div id="text2019_2" class="hidden">
+        <p>You sleeping so peacefully. I couldn’t stop smiling at the screen.</p>
+      </div>
+
+      <img src="2019/2019 - 3 drawing/1 the original.jpg" alt="The original drawing" class="media" onclick="toggleVisibility('text2019_3')" />
+      <div id="text2019_3" class="hidden">
+        <p>The very first sketch — before your creativity exploded. You were always full of soul.</p>
+      </div>
+
+      <img src="2019/2019 - 4 countless calls/2 pat is here.jpg" alt="Pat is here" class="media" onclick="toggleVisibility('text2019_4')" />
+      <div id="text2019_4" class="hidden">
+        <p>So many calls. Even when tired, we showed up for each other — every single day.</p>
+      </div>
+
+      <img src="2019/2019 - 5 dogs/3 foxi.jpg" alt="Foxi" class="media" onclick="toggleVisibility('text2019_5')" />
+      <div id="text2019_5" class="hidden">
+        <p>Foxi being Foxi. Your dog family became my dog family.</p>
+      </div>
+
+      <img src="2019/2019 - 6 holiday fridays/4 on the boat.jpg" alt="Holiday boat ride" class="media" onclick="toggleVisibility('text2019_6')" />
+      <div id="text2019_6" class="hidden">
+        <p>One of our dreamier memories — water, wind, laughter, and you.</p>
+      </div>
+
+      <img src="2019/2019 - 7 holiday tagaytay/4 the super cool asylum.jpg" alt="Tagaytay Asylum" class="media" onclick="toggleVisibility('text2019_7')" />
+      <div id="text2019_7" class="hidden">
+        <p>The asylum in Tagaytay — silly, strange, and so much fun with you by my side.</p>
+      </div>
+
+      <img src="2019/2019 - 8 EOY/2 EOY 2019 cha.jpg" alt="End of year" class="media" onclick="toggleVisibility('text2019_8')" />
+      <div id="text2019_8" class="hidden">
+        <p>The year ended with your smile. That was everything.</p>
+      </div>
     </div>
-    <div class="gallery">
-      <img src="PHOTO1.jpg" alt="Memory 1" />
-      <img src="PHOTO2.jpg" alt="Memory 2" />
-      <img src="PHOTO3.jpg" alt="Memory 3" />
-    </div>
+
     <div class="footer">
       <p>From your husband, with all my heart 💌</p>
     </div>
   </div>
+
+  <script>
+    function toggleVisibility(id) {
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === 'none' || el.style.display === '' ? 'block' : 'none';
+    }
+  </script>
 </body>
 </html>

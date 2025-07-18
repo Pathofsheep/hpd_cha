@@ -1,48 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Birthday My Love</title>
-  <style>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>My Love</title>
+		<style>
     body {
       margin: 0;
       font-family: 'Arial', sans-serif;
-      background: linear-gradient(to right, #fff0f5, #e6f7ff);
+      background: linear-gradient(to right, #f0f8ff, #e6f7ff);
       color: #333;
       text-align: center;
     }
     .container {
       padding: 40px 20px;
     }
-    h1 {
-      font-size: 2.5rem;
-      color: #d6336c;
-    }
     h2 {
-      font-size: 1.8rem;
-      color: #444;
-      margin-top: 60px;
+      font-size: 2rem;
+      color: #1e90ff;
+      margin-bottom: 30px;
     }
     .section {
       margin: 40px auto;
-      max-width: 700px;
+      max-width: 900px;
     }
-    .media {
-      cursor: pointer;
-      transition: transform 0.3s ease;
+    .side-by-side {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .hover-block {
+      position: relative;
+      max-width: 30%;
+    }
+    .hover-block img {
+      width: 100%;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      margin-bottom: 10px;
-      max-width: 100%;
-      height: auto;
+      transition: transform 0.3s ease;
+      cursor: pointer;
     }
-    .media:hover {
+    .hover-block img:hover {
       transform: scale(1.03);
     }
-    .hidden {
-      display: none;
-      margin-top: 15px;
+    .hover-text {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 5px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .hover-block:hover .hover-text {
+      opacity: 1;
+    }
+    .section-heading {
+      font-size: 1.2rem;
+      color: #555;
+      margin: 20px 0 10px;
+    }
+    .nav-button {
+      margin: 20px 10px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
     }
     .footer {
       margin-top: 60px;
@@ -50,65 +82,58 @@
       color: #666;
     }
   </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Happy Birthday, My Love ❤️</h1>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Happy Birthday, My Love ❤️</h1>
+			<p>Today is your birthday WOOO, and your first birthday as my wife! And even though we're miles apart, you are right here in my heart - cooorny 🤣</p>
+			<p>Every moment with you is unique baby. I love you more than words can say, and I can't wait for all the future birthdays we'll have side by side.</p>
+			<p>This is a little website, made just for you — because you deserve it soooo muchy</p>
+			<div class="side-by-side">
+				<div class="hover-block">
+					<img src="2019/2019 - 1 entry/1 pat.jpg" alt="Pat" onclick="openFullscreen(this)"/>
+					<div class="hover-text">That's me, wondering if this it it.</div>
+				</div>
+				<div class="hover-block">
+					<img src="2019/2019 - 1 entry/2 cha.jpg" alt="Cha"onclick="openFullscreen(this)"/>
+					<div class="hover-text">And then I saw you girl, and I knew yes. Yes, this is something beautiful!!</div>
+				</div>
+			</div>
+			<a href="2019_1.html">
+				<button class="nav-button">Next ➡️</button>
+			</a>
+			<div class="footer">
+				<p>For ma girly 💌</p>
+			</div>
+		</div>
+<script>
+    function openFullscreen(img) {
+      const src = img.src;
+      const overlay = document.createElement('div');
+      overlay.style.position = 'fixed';
+      overlay.style.top = '0';
+      overlay.style.left = '0';
+      overlay.style.width = '100vw';
+      overlay.style.height = '100vh';
+      overlay.style.backgroundColor = 'rgba(0,0,0,0.9)';
+      overlay.style.display = 'flex';
+      overlay.style.alignItems = 'center';
+      overlay.style.justifyContent = 'center';
+      overlay.style.zIndex = '1000';
 
-    <h2>2019 – The Year It All Began</h2>
+      const fullImg = document.createElement('img');
+      fullImg.src = src;
+      fullImg.style.maxWidth = '90%';
+      fullImg.style.maxHeight = '90%';
+      fullImg.style.borderRadius = '12px';
+      fullImg.style.boxShadow = '0 0 20px rgba(255,255,255,0.4)';
+      fullImg.style.cursor = 'pointer';
 
-    <div class="section">
-      <img src="2019/2019 - 1 entry/IMG_20181123_072806.jpg" alt="First entry" class="media" onclick="toggleVisibility('text2019_1')" />
-      <div id="text2019_1" class="hidden">
-        <p>This was where it started – two people, one spark, and a future we didn’t even see coming yet.</p>
-      </div>
+      overlay.appendChild(fullImg);
+      overlay.onclick = () => document.body.removeChild(overlay);
 
-      <img src="2019/2019 - 2 calyxta sleeping/IMG-20190128-WA0001.jpg" alt="Calyxta sleeping" class="media" onclick="toggleVisibility('text2019_2')" />
-      <div id="text2019_2" class="hidden">
-        <p>You sleeping so peacefully. I couldn’t stop smiling at the screen.</p>
-      </div>
-
-      <img src="2019/2019 - 3 drawing/1 the original.jpg" alt="The original drawing" class="media" onclick="toggleVisibility('text2019_3')" />
-      <div id="text2019_3" class="hidden">
-        <p>The very first sketch — before your creativity exploded. You were always full of soul.</p>
-      </div>
-
-      <img src="2019/2019 - 4 countless calls/2 pat is here.jpg" alt="Pat is here" class="media" onclick="toggleVisibility('text2019_4')" />
-      <div id="text2019_4" class="hidden">
-        <p>So many calls. Even when tired, we showed up for each other — every single day.</p>
-      </div>
-
-      <img src="2019/2019 - 5 dogs/3 foxi.jpg" alt="Foxi" class="media" onclick="toggleVisibility('text2019_5')" />
-      <div id="text2019_5" class="hidden">
-        <p>Foxi being Foxi. Your dog family became my dog family.</p>
-      </div>
-
-      <img src="2019/2019 - 6 holiday fridays/4 on the boat.jpg" alt="Holiday boat ride" class="media" onclick="toggleVisibility('text2019_6')" />
-      <div id="text2019_6" class="hidden">
-        <p>One of our dreamier memories — water, wind, laughter, and you.</p>
-      </div>
-
-      <img src="2019/2019 - 7 holiday tagaytay/4 the super cool asylum.jpg" alt="Tagaytay Asylum" class="media" onclick="toggleVisibility('text2019_7')" />
-      <div id="text2019_7" class="hidden">
-        <p>The asylum in Tagaytay — silly, strange, and so much fun with you by my side.</p>
-      </div>
-
-      <img src="2019/2019 - 8 EOY/2 EOY 2019 cha.jpg" alt="End of year" class="media" onclick="toggleVisibility('text2019_8')" />
-      <div id="text2019_8" class="hidden">
-        <p>The year ended with your smile. That was everything.</p>
-      </div>
-    </div>
-
-    <div class="footer">
-      <p>From your husband, with all my heart 💌</p>
-    </div>
-  </div>
-
-  <script>
-    function toggleVisibility(id) {
-      const el = document.getElementById(id);
-      el.style.display = el.style.display === 'none' || el.style.display === '' ? 'block' : 'none';
+      document.body.appendChild(overlay);
     }
   </script>
-</body>
+	</body>
 </html>

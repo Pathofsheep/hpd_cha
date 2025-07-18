@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>My Love</title>
+		<style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #f0f8ff, #e6f7ff);
+      color: #333;
+      text-align: center;
+    }
+    .container {
+      padding: 40px 20px;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #1e90ff;
+      margin-bottom: 30px;
+    }
+    .section {
+      margin: 40px auto;
+      max-width: 900px;
+    }
+    .side-by-side {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .hover-block {
+      position: relative;
+      max-width: 30%;
+    }
+    .hover-block img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .hover-block img:hover {
+      transform: scale(1.03);
+    }
+    .hover-text {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 5px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .hover-block:hover .hover-text {
+      opacity: 1;
+    }
+    .section-heading {
+      font-size: 1.2rem;
+      color: #555;
+      margin: 20px 0 10px;
+    }
+    .nav-button {
+      margin: 20px 10px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .footer {
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+	</head>
+	<body>
+		<div class="container">
+			<h2>2019 – The Beginning</h2>
+			<div class="section">
+				<img src="2019/2019 - 2 calyxta sleeping/IMG-20190128-WA0001.jpg" alt="Calyxta sleeping" class="media" onclick="openFullscreen(this)"/>
+				<div class="caption">
+        You were still working at Calyxta. So toired, no wonder we talked for such long hours at night.
+      </div>
+				<div class="side-by-side">
+					<div class="hover-block">
+						<img src="2019/2019 - 3 drawing/1 the original.jpg" alt="Original drawing" class="media" onclick="openFullscreen(this)"/>
+						<div class="hover-text">The original</div>
+					</div>
+					<div class="hover-block">
+						<img src="2019/2019 - 3 drawing/2 your first try.jpg" alt="First try" class="media" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Your first try</div>
+					</div>
+					<div class="hover-block">
+						<img src="2019/2019 - 3 drawing/3 but it got better.jpg" alt="Improved" class="media" onclick="openFullscreen(this)"/>
+						<div class="hover-text">So much better already!</div>
+					</div>
+				</div>
+				<div class="caption">
+        This was what you tried to draw for me — your first try was hmmm, a sweet try? (original vs yours 🤣) But then, it got better so fast!! The last one is already gooood
+      </div>
+				<div class="side-by-side">
+					<div class="hover-block">
+						<img src="2019/2019 - 4 countless calls/1 angry where are you.jpg" alt="Angry where are you" class="media" onclick="openFullscreen(this)"/>
+						<div class="hover-text">you look so angry like wheeeere are youuuu!</div>
+					</div>
+					<div class="hover-block">
+						<img src="2019/2019 - 4 countless calls/2 pat is here.jpg" alt="Pat is here" class="media" onclick="openFullscreen(this)"/>
+						<div class="hover-text">im here im here!</div>
+					</div>
+					<div class="hover-block">
+						<img src="2019/2019 - 4 countless calls/3 tired but waiting.jpg" alt="Tired but waiting" class="media" onclick="openFullscreen(this)"/>
+						<div class="hover-text">such a cutie</div>
+					</div>
+					<div class="hover-block">
+						<img src="2019/2019 - 4 countless calls/4 good times.jpg" alt="Good times" class="media" onclick="openFullscreen(this)"/>
+						<div class="hover-text">so happy with you</div>
+					</div>
+					<div class="caption">
+        Countless texting, remember at first we were so shy we didn't wanna call, but once we did, we never hung up.
+      </div>
+					<a href="index.html">
+						<button class="nav-button">⬅️ Back to Start</button>
+					</a>
+					<a href="index.html">
+						<button class="nav-button">⬅️ Previous</button>
+					</a>
+					<a href="2019_2.html">
+						<button class="nav-button">Next ➡️</button>
+					</a>
+				</div>
+				<div class="footer">
+					<p>From your husband with all my heart 💌</p>
+				</div>
+			</div>
+			<script>
+    function openFullscreen(img) {
+      const src = img.src;
+      const overlay = document.createElement('div');
+      overlay.style.position = 'fixed';
+      overlay.style.top = '0';
+      overlay.style.left = '0';
+      overlay.style.width = '100vw';
+      overlay.style.height = '100vh';
+      overlay.style.backgroundColor = 'rgba(0,0,0,0.9)';
+      overlay.style.display = 'flex';
+      overlay.style.alignItems = 'center';
+      overlay.style.justifyContent = 'center';
+      overlay.style.zIndex = '1000';
+
+      const fullImg = document.createElement('img');
+      fullImg.src = src;
+      fullImg.style.maxWidth = '90%';
+      fullImg.style.maxHeight = '90%';
+      fullImg.style.borderRadius = '12px';
+      fullImg.style.boxShadow = '0 0 20px rgba(255,255,255,0.4)';
+      fullImg.style.cursor = 'pointer';
+
+      overlay.appendChild(fullImg);
+      overlay.onclick = () => document.body.removeChild(overlay);
+
+      document.body.appendChild(overlay);
+    }
+  </script>
+		</body>
+	</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>My Love</title>
+		<style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #f0f8ff, #e6f7ff);
+      color: #333;
+      text-align: center;
+    }
+    .container {
+      padding: 40px 20px;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #1e90ff;
+      margin-bottom: 30px;
+    }
+    .section {
+      margin: 40px auto;
+      max-width: 900px;
+    }
+    .side-by-side {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .hover-block {
+      position: relative;
+      max-width: 30%;
+    }
+    .hover-block img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .hover-block img:hover {
+      transform: scale(1.03);
+    }
+    .hover-text {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 5px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .hover-block:hover .hover-text {
+      opacity: 1;
+    }
+    .section-heading {
+      font-size: 1.2rem;
+      color: #555;
+      margin: 20px 0 10px;
+    }
+    .nav-button {
+      margin: 20px 10px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .footer {
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+	</head>
+	<body>
+		<div class="container">
+			<h2>2020 – Covid, oh no, weird times, but same love</h2>
+			<div class="section">
+				<div class="section-heading">Heidy joined the game right?</div>
+				<div class="side-by-side">
+					<div class="hover-block">
+						<img src="2020/1 it starts slow/1 heidy as new helper.jpg" alt="Heidy" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Heidy joins</div>
+					</div>
+					<div class="hover-block">
+						<img src="2020/1 it starts slow/2 bastion girl.jpg" alt="Bastion" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Bastion girl mode</div>
+					</div>
+					<div class="hover-block">
+						<img src="2020/1 it starts slow/3 i moved to zurich.jpg" alt="Zurich" onclick="openFullscreen(this)"/>
+						<div class="hover-text">I moved to Zurich </div>
+					</div>
+					<div class="hover-block">
+						<img src="2020/1 it starts slow/4 cool chick cha.jpg" alt="Cool Cha" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Cool chick Cha 💁‍♀️</div>
+					</div>
+					<div class="hover-block">
+						<img src="2020/1 it starts slow/5 record long calls.jpg" alt="Calls" onclick="openFullscreen(this)"/>
+						<div class="hover-text">So many long, long calls</div>
+					</div>
+					<div class="hover-block">
+						<img src="2020/1 it starts slow/6 with the girl.jpg" alt="With Girl" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Always with the girl</div>
+					</div>
+					<div class="hover-block">
+						<img src="2020/1 it starts slow/7 and the boy.jpg" alt="With Boy" onclick="openFullscreen(this)"/>
+						<div class="hover-text">And the boy too</div>
+					</div>
+				</div>
+				<div class="section-heading">🐶🐶🐶🐶🐶🐶🐶 (7?)</div>
+				<div class="side-by-side">
+					<div class="hover-block">
+						<img src="2020/2 new dogs are coming/1 they are pregnant.jpg" alt="Pregnant" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Kisses with the big belly</div>
+					</div>
+					<div class="hover-block">
+						<img src="2020/2 new dogs are coming/2 so many new family members.jpg" alt="Pups" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Hugosh sooo small🐾</div>
+					</div>
+					<div class="hover-block">
+						<img src="2020/2 new dogs are coming/3 proud dog momma.jpg" alt="Momma" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Proud dog momma</div>
+					</div>
+					<div class="hover-block">
+						<img src="2020/2 new dogs are coming/4 the arrangements of them.jpg" alt="Arrangement" onclick="openFullscreen(this)"/>
+						<div class="hover-text">How you arranged them HAHHAH</div>
+					</div>
+				</div>
+				<div class="section-heading">The world stopped, covid on the rise, but we had business as usual📲</div>
+				<div class="side-by-side">
+					<div class="hover-block">
+						<img src="2020/3 covid era/1 covid on the rise.jpg" alt="Covid" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Covid on the rise</div>
+					</div>
+					<div class="hover-block">
+						<img src="2020/3 covid era/2 but we are used to calling already.jpg" alt="Calls" onclick="openFullscreen(this)"/>
+						<div class="hover-text">But we foin</div>
+					</div>
+					<div class="hover-block">
+						<img src="2020/3 covid era/3 so we stay at home.jpg" alt="Stay Home" onclick="openFullscreen(this)"/>
+						<div class="hover-text">We stayed home</div>
+					</div>
+					<div class="hover-block">
+						<img src="2020/3 covid era/4 chilling with dogs.jpg" alt="Dogs" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Chilling with the exhausted momma</div>
+					</div>
+					<div class="hover-block">
+						<img src="2020/3 covid era/5 i learn to bake.jpeg" alt="Bake" onclick="openFullscreen(this)"/>
+						<div class="hover-text">AAAnd I learned to bake 🍞</div>
+					</div>
+					<div class="hover-block">
+						<img src="2020/3 covid era/6 you are still the cutest of em all.jpg" alt="Cute" onclick="openFullscreen(this)"/>
+						<div class="hover-text">You're still the cutest</div>
+					</div>
+					<div class="hover-block">
+						<img src="2020/3 covid era/7 truely.jpg" alt="Truly" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Truly, yes</div>
+					</div>
+					<div class="hover-block">
+						<img src="2020/3 covid era/8 and we kill corona.jpg" alt="Corona" onclick="openFullscreen(this)"/>
+						<div class="hover-text">We killed it together</div>
+					</div>
+					<div class="hover-block">
+						<img src="2020/3 covid era/9 but your eyebrows what did you do.png" alt="Eyebrows" onclick="openFullscreen(this)"/>
+						<div class="hover-text">HAHAHAHA Remember? What did you do to your brows 😅</div>
+					</div>
+					<div class="hover-block">
+						<img src="2020/3 covid era/10 a slow year ends.jpg" alt="Slow Year" onclick="openFullscreen(this)"/>
+						<div class="hover-text">A slow year ends</div>
+					</div>
+					<div class="hover-block">
+						<img src="2020/3 covid era/11 also for fox.jpg" alt="Fox" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Fox made it in the pic!</div>
+					</div>
+				</div>
+				<a href="index.html">
+					<button class="nav-button">⬅️ Back to Start</button>
+				</a>
+				<a href="2019_2.html">
+					<button class="nav-button">⬅️ Previous</button>
+				</a>
+				<a href="2021_1.html">
+					<button class="nav-button">Next ➡️</button>
+				</a>
+			</div>
+			<div class="footer">
+				<p>Always us. 💙</p>
+			</div>
+		</div>
+		<script>
+    function openFullscreen(img) {
+      const src = img.src;
+      const overlay = document.createElement('div');
+      overlay.style.position = 'fixed';
+      overlay.style.top = '0';
+      overlay.style.left = '0';
+      overlay.style.width = '100vw';
+      overlay.style.height = '100vh';
+      overlay.style.backgroundColor = 'rgba(0,0,0,0.9)';
+      overlay.style.display = 'flex';
+      overlay.style.alignItems = 'center';
+      overlay.style.justifyContent = 'center';
+      overlay.style.zIndex = '1000';
+
+      const fullImg = document.createElement('img');
+      fullImg.src = src;
+      fullImg.style.maxWidth = '90%';
+      fullImg.style.maxHeight = '90%';
+      fullImg.style.borderRadius = '12px';
+      fullImg.style.boxShadow = '0 0 20px rgba(255,255,255,0.4)';
+      fullImg.style.cursor = 'pointer';
+
+      overlay.appendChild(fullImg);
+      overlay.onclick = () => document.body.removeChild(overlay);
+
+      document.body.appendChild(overlay);
+    }
+  </script>
+	</body>
+</html>

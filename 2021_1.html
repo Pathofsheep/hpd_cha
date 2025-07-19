@@ -7,11 +7,24 @@
 		<style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(to right, #f0f8ff, #e6f7ff);
-      color: #333;
+	  background: url('images/others/bg_2021_maledives.jpg') no-repeat center center fixed;
+	  background-size: cover;
+	  font-family: 'Arial', sans-serif;
+	  color: #333;
       text-align: center;
+	  position: relative;
+	  z-index: 1;
     }
+	body::before {
+	  content: "";
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  height: 100%;
+	  width: 100%;
+	  background: rgba(255, 255, 255, 0.3); /* Transparente weiße Ebene */
+	  z-index: -1;
+	}
     .container {
       padding: 40px 20px;
     }
@@ -35,6 +48,15 @@
       position: relative;
       max-width: 30%;
     }
+	.hover-block img, .hover-block video {
+	  height: 400px;
+	  width: 200px;
+	  object-fit: cover;
+	  border-radius: 12px;
+	  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	  transition: transform 0.3s ease;
+	  cursor: pointer;
+	}
     .hover-block img {
       width: 100%;
       border-radius: 12px;
@@ -85,11 +107,14 @@
       border-radius: 8px;
       cursor: pointer;
     }
-    .footer {
-      margin-top: 60px;
-      font-size: 0.9rem;
-      color: #666;
-    }
+	.footer {
+	  margin-top: 60px;
+	  font-size: 0.9rem;
+	  color: #fff;
+	  background-color: rgba(0, 0, 0, 0.5); /* halbtransparentes Schwarz */
+	  padding: 20px;
+	  border-radius: 12px;
+	}
   </style>
 	</head>
 	<body>
@@ -99,100 +124,100 @@
 				<div class="section-heading">A slow start with Covid on our minds</div>
 				<div class="side-by-side">
 					<div class="hover-block">
-						<img src="2021/1 a slow start/1 2021 starts slow and cold for pat.jpg" alt="Cold start" onclick="openFullscreen(this)"/>
+						<img src="images/2021/1 a slow start/1 2021 starts slow and cold for pat.jpg" alt="Cold start" onclick="openFullscreen(this)"/>
 						<div class="hover-text">So cold in Zurich</div>
 					</div>
 					<div class="hover-block">
-						<img src="2021/1 a slow start/2 and with a cute phone cover.jpg" alt="Phone cover" onclick="openFullscreen(this)"/>
+						<img src="images/2021/1 a slow start/2 and with a cute phone cover.jpg" alt="Phone cover" onclick="openFullscreen(this)"/>
 						<div class="hover-text">The girl has a new cute phone ocver 🧸</div>
 					</div>
 					<div class="hover-block">
-						<img src="2021/1 a slow start/3 how much i missed this girl.jpg" alt="Missed" onclick="openFullscreen(this)"/>
+						<img src="images/2021/1 a slow start/3 how much i missed this girl.jpg" alt="Missed" onclick="openFullscreen(this)"/>
 						<div class="hover-text">I missed this girl so much</div>
 					</div>
 					<div class="hover-block">
-						<img src="2021/1 a slow start/4 cheeky girl.jpg" alt="Cheeky" onclick="openFullscreen(this)"/>
+						<img src="images/2021/1 a slow start/4 cheeky girl.jpg" alt="Cheeky" onclick="openFullscreen(this)"/>
 						<div class="hover-text">That cheeky look HAHAHA🐒</div>
 					</div>
 					<div class="hover-block">
-						<img src="2021/1 a slow start/5 so many calls.jpg" alt="Calls" onclick="openFullscreen(this)"/>
+						<img src="images/2021/1 a slow start/5 so many calls.jpg" alt="Calls" onclick="openFullscreen(this)"/>
 						<div class="hover-text">So many calls again, WHEN CAN WE SEE EACHOTHER WAA</div>
 					</div>
 				</div>
 				<div class="section-heading">The reunion</div>
 				<div class="side-by-side">
 					<div class="hover-block">
-						<img src="2021/2 the meetup at the airport/1 finally we meet again - doha airport.jpg" alt="Meetup" onclick="openFullscreen(this)"/>
+						<img src="images/2021/2 the meetup at the airport/1 finally we meet again - doha airport.jpg" alt="Meetup" onclick="openFullscreen(this)"/>
 						<div class="hover-text">We meet again finally WOO, the Doha airport</div>
 					</div>
 					<div class="hover-block">
-						<img src="2021/2 the meetup at the airport/2 flying again.jpg" alt="Flying" onclick="openFullscreen(this)"/>
+						<img src="images/2021/2 the meetup at the airport/2 flying again.jpg" alt="Flying" onclick="openFullscreen(this)"/>
 						<div class="hover-text">And flying together✈️</div>
 					</div>
 					<div class="hover-block">
-						<img src="2021/2 the meetup at the airport/3 the cute boi and the cute girl.jpg" alt="Cute Couple" onclick="openFullscreen(this)"/>
+						<img src="images/2021/2 the meetup at the airport/3 the cute boi and the cute girl.jpg" alt="Cute Couple" onclick="openFullscreen(this)"/>
 						<div class="hover-text">The cute boi and the cute girl</div>
 					</div>
 					<div class="hover-block">
-						<img src="2021/2 the meetup at the airport/4 the waterplane.jpg" alt="Waterplane" onclick="openFullscreen(this)"/>
+						<img src="images/2021/2 the meetup at the airport/4 the waterplane.jpg" alt="Waterplane" onclick="openFullscreen(this)"/>
 						<div class="hover-text">The first waterplane, the nice one.. we didnt know whats to come</div>
 					</div>
 					<div class="hover-block">
-						<video controls><source src="2021/2 the meetup at the airport/5 and we arrive in kuredu.mp4" type="video/mp4"/>
+						<video controls><source src="images/2021/2 the meetup at the airport/5 and we arrive in kuredu.mp4" type="video/mp4"/>
 					</div>
 				</div>
 				<div class="section-heading">Maledives, our inofficial honeymoon? HAHA</div>
 				<div class="side-by-side">
 					<div class="hover-block">
-						<img src="2021/3 maledives/1 our cool room.jpg" alt="Room" onclick="openFullscreen(this)"/>
+						<img src="images/2021/3 maledives/1 our cool room.jpg" alt="Room" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Our rooom with the whirlpool next door weeee</div>
 					</div>
 					<div class="hover-block">
-						<img src="2021/3 maledives/2 the beach.jpg" alt="Beach" onclick="openFullscreen(this)"/>
+						<img src="images/2021/3 maledives/2 the beach.jpg" alt="Beach" onclick="openFullscreen(this)"/>
 						<div class="hover-text">the cute swings and the white sand..</div>
 					</div>
 					<div class="hover-block">
-						<img src="2021/3 maledives/3 the great food from mohan and the other chefs.jpg" alt="Food" onclick="openFullscreen(this)"/>
+						<img src="images/2021/3 maledives/3 the great food from mohan and the other chefs.jpg" alt="Food" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Mohan and the chefs cooked soooooo gooooood</div>
 					</div>
 					<div class="hover-block">
-						<img src="2021/3 maledives/4 your outfits were always perfect.jpg" alt="Outfits" onclick="openFullscreen(this)"/>
+						<img src="images/2021/3 maledives/4 your outfits were always perfect.jpg" alt="Outfits" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Always dressed sooo cute ma girl👗</div>
 					</div>
 					<div class="hover-block">
-						<img src="2021/3 maledives/5 so cute.jpg" alt="Cute" onclick="openFullscreen(this)"/>
+						<img src="images/2021/3 maledives/5 so cute.jpg" alt="Cute" onclick="openFullscreen(this)"/>
 						<div class="hover-text">we are so dam cute no?</div>
 					</div>
 					<div class="hover-block">
-						<img src="2021/3 maledives/6 did you already get a tan.jpg" alt="Tan" onclick="openFullscreen(this)"/>
+						<img src="images/2021/3 maledives/6 did you already get a tan.jpg" alt="Tan" onclick="openFullscreen(this)"/>
 						<div class="hover-text">you look so tan alread HAHHA</div>
 					</div>
 					<div class="hover-block">
-						<img src="2021/3 maledives/7 the bikini so cute.jpg" alt="Bikini" onclick="openFullscreen(this)"/>
+						<img src="images/2021/3 maledives/7 the bikini so cute.jpg" alt="Bikini" onclick="openFullscreen(this)"/>
 						<div class="hover-text">The best bikini! ❤️</div>
 					</div>
 					<div class="hover-block">
-						<img src="2021/3 maledives/8 a cute couple we are.jpg" alt="Couple" onclick="openFullscreen(this)"/>
+						<img src="images/2021/3 maledives/8 a cute couple we are.jpg" alt="Couple" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Gosh we enjoyed eachother so much after not seeing us for so long</div>
 					</div>
 					<div class="hover-block">
-						<img src="2021/3 maledives/9 always looking so  good.jpg" alt="Good Looks" onclick="openFullscreen(this)"/>
+						<img src="images/2021/3 maledives/9 always looking so  good.jpg" alt="Good Looks" onclick="openFullscreen(this)"/>
 						<div class="hover-text">And your outfits so amazing all the time</div>
 					</div>
 					<div class="hover-block">
-						<img src="2021/3 maledives/10 windy windy.jpg" alt="Windy" onclick="openFullscreen(this)"/>
+						<img src="images/2021/3 maledives/10 windy windy.jpg" alt="Windy" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Windy, windy... 💨</div>
 					</div>
 					<div class="hover-block">
-						<img src="2021/3 maledives/11 did you get 1 new bikini for every day.jpg" alt="Bikinis" onclick="openFullscreen(this)"/>
+						<img src="images/2021/3 maledives/11 did you get 1 new bikini for every day.jpg" alt="Bikinis" onclick="openFullscreen(this)"/>
 						<div class="hover-text">One new bikini everyday?! 😍</div>
 					</div>
 					<div class="hover-block">
-						<img src="2021/3 maledives/12 we are so cringe hahaha.jpg" alt="Cringe" onclick="openFullscreen(this)"/>
+						<img src="images/2021/3 maledives/12 we are so cringe hahaha.jpg" alt="Cringe" onclick="openFullscreen(this)"/>
 						<div class="hover-text">So cringe HAHAHAH</div>
 					</div>
 					<div class="hover-block">
-						<img src="2021/3 maledives/13 it ended too soon (and too spinny in the plane).jpg" alt="End" onclick="openFullscreen(this)"/>
+						<img src="images/2021/3 maledives/13 it ended too soon (and too spinny in the plane).jpg" alt="End" onclick="openFullscreen(this)"/>
 						<div class="hover-text">It ended too soon didnt it .. and too spinny .. </div>
 					</div>
 				</div>

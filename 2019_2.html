@@ -7,11 +7,25 @@
 		<style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(to right, #f0f8ff, #e6f7ff);
-      color: #333;
+	  background: url('images/others/bg_letter_2019_2.jpeg') no-repeat center center fixed;
+	  background-repeat: repeat;
+	  background-size: auto;
+	  font-family: 'Arial', sans-serif;
+	  color: #333;
       text-align: center;
+	  position: relative;
+	  z-index: 1;
     }
+	body::before {
+	  content: "";
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  height: 100%;
+	  width: 100%;
+	  background: rgba(255, 255, 255, 0.7); /* Transparente weiße Ebene */
+	  z-index: -1;
+	}
     .container {
       padding: 40px 20px;
     }
@@ -35,6 +49,15 @@
       position: relative;
       max-width: 30%;
     }
+	.hover-block img, .hover-block video {
+	  height: 400px;
+	  width: 200px;
+	  object-fit: cover;
+	  border-radius: 12px;
+	  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	  transition: transform 0.3s ease;
+	  cursor: pointer;
+	}
     .hover-block img {
       width: 100%;
       border-radius: 12px;
@@ -45,6 +68,15 @@
     .hover-block img:hover {
       transform: scale(1.03);
     }
+	.hover-block video {
+	  width: 100%;
+	  max-height: 600px;
+	  object-fit: cover;
+	  border-radius: 12px;
+	  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	  transition: transform 0.3s ease;
+	  cursor: pointer;
+	}
     .hover-text {
       position: absolute;
       bottom: 10px;
@@ -76,11 +108,14 @@
       border-radius: 8px;
       cursor: pointer;
     }
-    .footer {
-      margin-top: 60px;
-      font-size: 0.9rem;
-      color: #666;
-    }
+	.footer {
+	  margin-top: 60px;
+	  font-size: 0.9rem;
+	  color: #fff;
+	  background-color: rgba(0, 0, 0, 0.5); /* halbtransparentes Schwarz */
+	  padding: 20px;
+	  border-radius: 12px;
+	}
   </style>
 	</head>
 	<body>
@@ -91,47 +126,47 @@
 				<div class="section-heading">The animals of 2019, so different from now!</div>
 				<div class="side-by-side">
 					<div class="hover-block">
-						<img src="2019/2019 - 5 dogs/1 brix so thin.jpg" alt="Brixclass="media" onclick="openFullscreen(this)"/>
+						<img src="images/2019/2019 - 5 dogs/1 brix so thin.jpg" alt="Brixclass="media" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Brix, so thin back then.. compared to now at least HAHAHA</div>
 					</div>
 					<div class="hover-block">
-						<img src="2019/2019 - 5 dogs/2 kisses young.jpg" alt="Kissesclass="media" onclick="openFullscreen(this)"/>
+						<img src="images/2019/2019 - 5 dogs/2 kisses young.jpg" alt="Kissesclass="media" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Young Kisses, looks so elegant</div>
 					</div>
 					<div class="hover-block">
-						<img src="2019/2019 - 5 dogs/3 foxi.jpg" alt="Foxiclass="media" onclick="openFullscreen(this)"/>
+						<img src="images/2019/2019 - 5 dogs/3 foxi.jpg" alt="Foxiclass="media" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Foxi, hugging the cam</div>
 					</div>
 					<div class="hover-block">
-						<img src="2019/2019 - 5 dogs/4 viola.jpg" alt="Violaclass="media" onclick="openFullscreen(this)"/>
+						<img src="images/2019/2019 - 5 dogs/4 viola.jpg" alt="Violaclass="media" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Viola in a box</div>
 					</div>
 				</div>
 				<!-- Holiday Fridays -->
-				<div class="section-heading">Our first real holidays — Gosh was I nervous to meet you. But you took my nerviousity away in the car. I will never forget it</div>
+				<div class="section-heading">Our first real holidays — Gosh was I nervous to meet you. But you took my nervousity away in the carride. I will never forget it</div>
 				<div class="side-by-side">
 					<div class="hover-block">
-						<img src="2019/2019 - 6 holiday fridays/1 first visit .jpg" alt="Visitclass="media" onclick="openFullscreen(this)"/>
+						<img src="images/2019/2019 - 6 holiday fridays/1 first visit .jpg" alt="Visitclass="media" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Our first holiday visit</div>
 					</div>
 					<div class="hover-block">
-						<img src="2019/2019 - 6 holiday fridays/2 with kisses.jpg" alt="mwahclass="media" onclick="openFullscreen(this)"/>
+						<img src="images/2019/2019 - 6 holiday fridays/2 with kisses.jpg" alt="mwahclass="media" onclick="openFullscreen(this)"/>
 						<div class="hover-text">mwah from me</div>
 					</div>
 					<div class="hover-block">
-						<img src="2019/2019 - 6 holiday fridays/3 also from you.jpg" alt="mwah2class="media" onclick="openFullscreen(this)"/>
+						<img src="images/2019/2019 - 6 holiday fridays/3 also from you.jpg" alt="mwah2class="media" onclick="openFullscreen(this)"/>
 						<div class="hover-text">mwah from you</div>
 					</div>
 					<div class="hover-block">
-						<img src="2019/2019 - 6 holiday fridays/4 on the boat.jpg" alt="Boatclass="media" onclick="openFullscreen(this)"/>
+						<img src="images/2019/2019 - 6 holiday fridays/4 on the boat.jpg" alt="Boatclass="media" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Boat ride!</div>
 					</div>
 					<div class="hover-block">
-						<img src="2019/2019 - 6 holiday fridays/5 at fridays.jpg" alt="chillinclass="media" onclick="openFullscreen(this)"/>
+						<img src="images/2019/2019 - 6 holiday fridays/5 at fridays.jpg" alt="chillinclass="media" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Chilling at the pool!</div>
 					</div>
 					<div class="hover-block">
-						<img src="2019/2019 - 6 holiday fridays/7 remember the doggie.jpg" alt="Doggieclass="media" onclick="openFullscreen(this)"/>
+						<img src="images/2019/2019 - 6 holiday fridays/7 remember the doggie.jpg" alt="Doggieclass="media" onclick="openFullscreen(this)"/>
 						<div class="hover-text">You remember this one?</div>
 					</div>
 				</div>
@@ -139,19 +174,19 @@
 				<div class="section-heading">First time in Tagaytay, remember how small the aptuh patuh was? greek style!</div>
 				<div class="side-by-side">
 					<div class="hover-block">
-						<img src="2019/2019 - 7 holiday tagaytay/1 foodie in tagay.jpg" alt="Foodieclass="media" onclick="openFullscreen(this)"/>
+						<img src="images/2019/2019 - 7 holiday tagaytay/1 foodie in tagay.jpg" alt="Foodieclass="media" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Foodie in Tagaytay</div>
 					</div>
 					<div class="hover-block">
-						<img src="2019/2019 - 7 holiday tagaytay/2 your cute sweater.jpg" alt="sweaterclass="media" onclick="openFullscreen(this)"/>
+						<img src="images/2019/2019 - 7 holiday tagaytay/2 your cute sweater.jpg" alt="sweaterclass="media" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Your sweater is so cuuute</div>
 					</div>
 					<div class="hover-block">
-						<img src="2019/2019 - 7 holiday tagaytay/3 our love mate taal erupt haha.jpg" alt="Taalclass="media" onclick="openFullscreen(this)"/>
+						<img src="images/2019/2019 - 7 holiday tagaytay/3 our love mate taal erupt haha.jpg" alt="Taalclass="media" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Our love erupted like Taal .. gosh this feels inappropriate hahahaha</div>
 					</div>
 					<div class="hover-block">
-						<img src="2019/2019 - 7 holiday tagaytay/4 the super cool asylum.jpg" alt="Asylumclass="media" onclick="openFullscreen(this)"/>
+						<img src="images/2019/2019 - 7 holiday tagaytay/4 the super cool asylum.jpg" alt="Asylumclass="media" onclick="openFullscreen(this)"/>
 						<div class="hover-text">The asylum wuahhaa</div>
 					</div>
 				</div>
@@ -159,11 +194,11 @@
 				<div class="section-heading">our first year being together ended, so much changed in 2019!</div>
 				<div class="side-by-side">
 					<div class="hover-block">
-						<img src="2019/2019 - 8 EOY/1 EOY 2019 pat.jpg" alt="EOY Patclass="media" onclick="openFullscreen(this)"/>
+						<img src="images/2019/2019 - 8 EOY/1 EOY 2019 pat.jpg" alt="EOY Patclass="media" onclick="openFullscreen(this)"/>
 						<div class="hover-text">EOY 2019 – your Pat</div>
 					</div>
 					<div class="hover-block">
-						<img src="2019/2019 - 8 EOY/2 EOY 2019 cha.jpg" alt="EOY Chaclass="media" onclick="openFullscreen(this)"/>
+						<img src="images/2019/2019 - 8 EOY/2 EOY 2019 cha.jpg" alt="EOY Chaclass="media" onclick="openFullscreen(this)"/>
 						<div class="hover-text">EOY 2019 – my Cha</div>
 					</div>
 				</div>

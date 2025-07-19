@@ -7,11 +7,25 @@
 		<style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(to right, #f0f8ff, #e6f7ff);
-      color: #333;
+	  background: url('images/others/bg_drawing_1_2019.jpg') no-repeat center center fixed;
+	  background-repeat: repeat;
+	  background-size: auto;
+	  font-family: 'Arial', sans-serif;
+	  color: #333;
       text-align: center;
+	  position: relative;
+	  z-index: 1;
     }
+	body::before {
+	  content: "";
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  height: 100%;
+	  width: 100%;
+	  background: rgba(255, 255, 255, 0.3); /* Transparente weiße Ebene */
+	  z-index: -1;
+	}
     .container {
       padding: 40px 20px;
     }
@@ -35,6 +49,15 @@
       position: relative;
       max-width: 30%;
     }
+	.hover-block img, .hover-block video {
+	  height: 400px;
+	  width: 200px;
+	  object-fit: cover;
+	  border-radius: 12px;
+	  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	  transition: transform 0.3s ease;
+	  cursor: pointer;
+	}
     .hover-block img {
       width: 100%;
       border-radius: 12px;
@@ -45,6 +68,15 @@
     .hover-block img:hover {
       transform: scale(1.03);
     }
+	.hover-block video {
+	  width: 100%;
+	  max-height: 600px;
+	  object-fit: cover;
+	  border-radius: 12px;
+	  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	  transition: transform 0.3s ease;
+	  cursor: pointer;
+	}
     .hover-text {
       position: absolute;
       bottom: 10px;
@@ -63,7 +95,7 @@
     }
     .section-heading {
       font-size: 1.2rem;
-      color: #555;
+      color:  #555;
       margin: 20px 0 10px;
     }
     .nav-button {
@@ -76,73 +108,75 @@
       border-radius: 8px;
       cursor: pointer;
     }
-    .footer {
-      margin-top: 60px;
-      font-size: 0.9rem;
-      color: #666;
-    }
+	.footer {
+	  margin-top: 60px;
+	  font-size: 0.9rem;
+	  color: #fff;
+	  background-color: rgba(0, 0, 0, 0.5); /* halbtransparentes Schwarz */
+	  padding: 20px;
+	  border-radius: 12px;
+	}
   </style>
 	</head>
 	<body>
 		<div class="container">
 			<h2>2019 – The Beginning</h2>
-			<div class="section">
-				<img src="2019/2019 - 2 calyxta sleeping/IMG-20190128-WA0001.jpg" alt="Calyxta sleeping" class="media" onclick="openFullscreen(this)"/>
-				<div class="caption">
-        You were still working at Calyxta. So toired, no wonder we talked for such long hours at night.
-      </div>
-				<div class="side-by-side">
-					<div class="hover-block">
-						<img src="2019/2019 - 3 drawing/1 the original.jpg" alt="Original drawing" class="media" onclick="openFullscreen(this)"/>
-						<div class="hover-text">The original</div>
-					</div>
-					<div class="hover-block">
-						<img src="2019/2019 - 3 drawing/2 your first try.jpg" alt="First try" class="media" onclick="openFullscreen(this)"/>
-						<div class="hover-text">Your first try</div>
-					</div>
-					<div class="hover-block">
-						<img src="2019/2019 - 3 drawing/3 but it got better.jpg" alt="Improved" class="media" onclick="openFullscreen(this)"/>
-						<div class="hover-text">So much better already!</div>
-					</div>
+			<div class="side-by-side">
+				<div class="hover-block">
+					<img src="images/2019/2019 - 2 calyxta sleeping/IMG-20190128-WA0001.jpg" alt="Calyxta sleeping" class="media" onclick="openFullscreen(this)"/>
+					<div class="hover-text">You were still working at Calyxta. So toired, no wonder we talked for such long hours at night.</div>
 				</div>
-				<div class="caption">
-        This was what you tried to draw for me — your first try was hmmm, a sweet try? (original vs yours 🤣) But then, it got better so fast!! The last one is already gooood
-      </div>
-				<div class="side-by-side">
-					<div class="hover-block">
-						<img src="2019/2019 - 4 countless calls/1 angry where are you.jpg" alt="Angry where are you" class="media" onclick="openFullscreen(this)"/>
-						<div class="hover-text">you look so angry like wheeeere are youuuu!</div>
-					</div>
-					<div class="hover-block">
-						<img src="2019/2019 - 4 countless calls/2 pat is here.jpg" alt="Pat is here" class="media" onclick="openFullscreen(this)"/>
-						<div class="hover-text">im here im here!</div>
-					</div>
-					<div class="hover-block">
-						<img src="2019/2019 - 4 countless calls/3 tired but waiting.jpg" alt="Tired but waiting" class="media" onclick="openFullscreen(this)"/>
-						<div class="hover-text">such a cutie</div>
-					</div>
-					<div class="hover-block">
-						<img src="2019/2019 - 4 countless calls/4 good times.jpg" alt="Good times" class="media" onclick="openFullscreen(this)"/>
-						<div class="hover-text">so happy with you</div>
-					</div>
-					<div class="caption">
-        Countless texting, remember at first we were so shy we didn't wanna call, but once we did, we never hung up.
-      </div>
-					<a href="index.html">
-						<button class="nav-button">⬅️ Back to Start</button>
-					</a>
-					<a href="index.html">
-						<button class="nav-button">⬅️ Previous</button>
-					</a>
-					<a href="2019_2.html">
-						<button class="nav-button">Next ➡️</button>
-					</a>
+				<div class="hover-block">
+					<img src="images/2019/2019 - 3 drawing/1 the original.jpg" alt="Original drawing" class="media" onclick="openFullscreen(this)"/>
+					<div class="hover-text">The original</div>
 				</div>
-				<div class="footer">
-					<p>From your husband with all my heart 💌</p>
+				<div class="hover-block">
+					<img src="images/2019/2019 - 3 drawing/2 your first try.jpg" alt="First try" class="media" onclick="openFullscreen(this)"/>
+					<div class="hover-text">Your first try</div>
+				</div>
+				<div class="hover-block">
+					<img src="images/2019/2019 - 3 drawing/3 but it got better.jpg" alt="Improved" class="media" onclick="openFullscreen(this)"/>
+					<div class="hover-text">So much better already!</div>
 				</div>
 			</div>
-			<script>
+				<div class="section-heading">This was what you tried to draw for me — your first try was hmmm, a sweet try? (original vs yours 🤣) But then, it got better so fast!! The last one is already gooood</div>
+        
+      </div>
+			<div class="side-by-side">
+				<div class="hover-block">
+					<img src="images/2019/2019 - 4 countless calls/1 angry where are you.jpg" alt="Angry where are you" class="media" onclick="openFullscreen(this)"/>
+					<div class="hover-text">you look so angry like wheeeere are youuuu!</div>
+				</div>
+				<div class="hover-block">
+					<img src="images/2019/2019 - 4 countless calls/2 pat is here.jpg" alt="Pat is here" class="media" onclick="openFullscreen(this)"/>
+					<div class="hover-text">im here im here!</div>
+				</div>
+				<div class="hover-block">
+					<img src="images/2019/2019 - 4 countless calls/3 tired but waiting.jpg" alt="Tired but waiting" class="media" onclick="openFullscreen(this)"/>
+					<div class="hover-text">such a cutie</div>
+				</div>
+				<div class="hover-block">
+					<img src="images/2019/2019 - 4 countless calls/4 good times.jpg" alt="Good times" class="media" onclick="openFullscreen(this)"/>
+					<div class="hover-text">so happy with you</div>
+				</div>
+				<div class="section-heading">Countless texting, remember at first we were so shy we didn't wanna call, but once we did, we never hung up.</div>
+        
+      </div>
+			</div>
+			<a href="index.html">
+				<button class="nav-button">⬅️ Back to Start</button>
+			</a>
+			<a href="index.html">
+				<button class="nav-button">⬅️ Previous</button>
+			</a>
+			<a href="2019_2.html">
+				<button class="nav-button">Next ➡️</button>
+			</a>
+			<div class="footer">
+				<p>From your husband with all my heart 💌</p>
+			</div>
+		</div>
+		<script>
     function openFullscreen(img) {
       const src = img.src;
       const overlay = document.createElement('div');
@@ -171,5 +205,5 @@
       document.body.appendChild(overlay);
     }
   </script>
-		</body>
-	</html>
+	</body>
+</html>

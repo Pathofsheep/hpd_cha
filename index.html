@@ -7,11 +7,56 @@
 		<style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(to right, #f0f8ff, #e6f7ff);
-      color: #333;
+	  background: url('images/others/bg_hearts_index.jpg') no-repeat center center fixed;
+	  background-size: cover;
+	  font-family: 'Arial', sans-serif;
+	  color: #333;
       text-align: center;
+	  position: relative;
+	  z-index: 1;
     }
+	body::before {
+	  content: "";
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  height: 100%;
+	  width: 100%;
+	  background: rgba(255, 255, 255, 0.5); /* Transparente weiße Ebene */
+	  z-index: -1;
+	}
+	h1 .heart {
+	  animation: heartbeat 1.5s infinite;
+	  display: inline-block;
+	  transform-origin: center;
+	}
+	@keyframes heartbeat {
+	  0%, 100% { transform: scale(1); }
+	  25% { transform: scale(1.2); }
+	  50% { transform: scale(1); }
+	  75% { transform: scale(1.1); }
+	}
+	.timeline {
+	  margin-top: 40px;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: flex-start;
+	  gap: 10px;
+	}
+
+	.timeline a {
+	  text-decoration: none;
+	  font-size: 1.1rem;
+	  color: #ff69b4;
+	  padding: 5px 10px;
+	  border-left: 4px solid #ff69b4;
+	  transition: background 0.3s, color 0.3s;
+	}
+
+	.timeline a:hover {
+	  background: #ffe6f0;
+	  color: #d63384;
+	}
     .container {
       padding: 40px 20px;
     }
@@ -35,6 +80,15 @@
       position: relative;
       max-width: 30%;
     }
+	.hover-block img, .hover-block video {
+	  height: 900px;
+	  width: 500px;
+	  object-fit: cover;
+	  border-radius: 12px;
+	  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	  transition: transform 0.3s ease;
+	  cursor: pointer;
+	}
     .hover-block img {
       width: 100%;
       border-radius: 12px;
@@ -45,6 +99,15 @@
     .hover-block img:hover {
       transform: scale(1.03);
     }
+	.hover-block video {
+	  width: 100%;
+	  max-height: 600px;
+	  object-fit: cover;
+	  border-radius: 12px;
+	  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	  transition: transform 0.3s ease;
+	  cursor: pointer;
+	}
     .hover-text {
       position: absolute;
       bottom: 10px;
@@ -76,37 +139,54 @@
       border-radius: 8px;
       cursor: pointer;
     }
-    .footer {
-      margin-top: 60px;
-      font-size: 0.9rem;
-      color: #666;
-    }
+	.footer {
+	  margin-top: 60px;
+	  font-size: 0.9rem;
+	  color: #fff;
+	  background-color: rgba(0, 0, 0, 0.5); /* halbtransparentes Schwarz */
+	  padding: 20px;
+	  border-radius: 12px;
+	}
   </style>
 	</head>
 	<body>
 		<div class="container">
-			<h1>Happy Birthday, My Love ❤️</h1>
+			<h1>
+				<span class="heart">❤️</span> Happy Birthday, my lovey dovey <span class="heart">❤️</span>
+			</h1>
 			<p>Today is your birthday WOOO, and your first birthday as my wife! And even though we're miles apart, you are right here in my heart - cooorny 🤣</p>
 			<p>Every moment with you is unique baby. I love you more than words can say, and I can't wait for all the future birthdays we'll have side by side.</p>
 			<p>This is a little website, made just for you — because you deserve it soooo muchy</p>
 			<div class="side-by-side">
 				<div class="hover-block">
-					<img src="2019/2019 - 1 entry/1 pat.jpg" alt="Pat" onclick="openFullscreen(this)"/>
-					<div class="hover-text">That's me, wondering if this it it.</div>
+					<img src="images/2019/2019 - 1 entry/1 pat.jpg" alt="Pat" onclick="openFullscreen(this)"/>
+					<div class="hover-text">The ol' Patrick, so happy because it was my first time truely feeling like being in love</div>
 				</div>
 				<div class="hover-block">
-					<img src="2019/2019 - 1 entry/2 cha.jpg" alt="Cha"onclick="openFullscreen(this)"/>
-					<div class="hover-text">And then I saw you girl, and I knew yes. Yes, this is something beautiful!!</div>
+					<img src="images/2019/2019 - 1 entry/2 cha.jpg" alt="Cha" onclick="openFullscreen(this)"/>
+					<div class="hover-text">And that's you, and gosh thank you so much for who you are, for giving me your unconditional love, for making me open up completely to you, and for never giving up on us!!</div>
 				</div>
 			</div>
 			<a href="2019_1.html">
 				<button class="nav-button">Next ➡️</button>
 			</a>
+			<div class="timeline">
+				<a href="2019_1.html">📍 2019 – It begins</a>
+				<a href="2019_2.html">📍 2019 – Dogs, Holidays, EOY</a>
+				<a href="2020_1.html">📍 2020 – Covid & Cuteness</a>
+				<a href="2021_1.html">📍 2021 – The Wait Ends</a>
+				<a href="2022_1.html">📍 2022 – Taguig & Mountains</a>
+				<a href="2022_2.html">📍 2022 – Venice & First Austria</a>
+				<a href="2023_1.html">📍 2023 – Valenca & Brix</a>
+				<a href="2023_2.html">📍 2023 – Austria & Italy</a>
+				<a href="2024_1.html">📍 2024 – Our Engagement</a>
+				<a href="2025_1.html">📍 2025 – Our Wedding</a>
+			</div>
 			<div class="footer">
 				<p>For ma girly 💌</p>
 			</div>
 		</div>
-<script>
+		<script>
     function openFullscreen(img) {
       const src = img.src;
       const overlay = document.createElement('div');

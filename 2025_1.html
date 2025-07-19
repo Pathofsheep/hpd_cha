@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>My Love</title>
+		<style>
+    body {
+      margin: 0;
+	  background: url('images/others/bg_2025_wedding.jpg') no-repeat center center fixed;
+	  background-size: cover;
+	  font-family: 'Arial', sans-serif;
+	  color: #333;
+      text-align: center;
+	  position: relative;
+	  z-index: 1;
+    }
+	body::before {
+	  content: "";
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  height: 100%;
+	  width: 100%;
+	  background: rgba(255, 255, 255, 0.15); /* Transparente weiße Ebene */
+	  z-index: -1;
+	}
+	h1 .heart {
+	  animation: heartbeat 1.5s infinite;
+	  display: inline-block;
+	  transform-origin: center;
+	}
+	@keyframes heartbeat {
+	  0%, 100% { transform: scale(1); }
+	  25% { transform: scale(1.2); }
+	  50% { transform: scale(1); }
+	  75% { transform: scale(1.1); }
+	}
+	.timeline {
+	  margin-top: 40px;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: flex-start;
+	  gap: 10px;
+	}
+
+	.timeline a {
+	  text-decoration: none;
+	  font-size: 1.1rem;
+	  color: #bb47c6 ;
+	  padding: 5px 10px;
+	  border-left: 4px solid #ff69b4;
+	  transition: background 0.3s, color 0.3s;
+	}
+
+	.timeline a:hover {
+	  background: #ffe6f0;
+	  color: #d63384;
+	}
+    .container {
+      padding: 40px 20px;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #1e90ff;
+      margin-bottom: 30px;
+    }
+    .section {
+      margin: 40px auto;
+      max-width: 900px;
+    }
+    .side-by-side {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .hover-block {
+      position: relative;
+      max-width: 30%;
+    }
+	.hover-block img, .hover-block video {
+	  height: 400px;
+	  width: 200px;
+	  object-fit: cover;
+	  border-radius: 12px;
+	  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	  transition: transform 0.3s ease;
+	  cursor: pointer;
+	}
+    .hover-block img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .hover-block img:hover {
+      transform: scale(1.03);
+    }
+	.hover-block video {
+	  width: 100%;
+	  max-height: 600px;
+	  object-fit: cover;
+	  border-radius: 12px;
+	  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	  transition: transform 0.3s ease;
+	  cursor: pointer;
+	}
+    .hover-text {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 5px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .hover-block:hover .hover-text {
+      opacity: 1;
+    }
+    .section-heading {
+      font-size: 1.4rem;
+      color: white ;
+      margin: 20px 0 10px;
+    }
+    .nav-button {
+      margin: 20px 10px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+	
+	.aftertext {
+	  margin-top: 60px;
+      font-size: 1.4rem;
+      color: #f3c6b8  ;
+	  background-color: rgba(0, 0, 0, 0.5); /* halbtransparentes Schwarz */
+	  padding: 20px;
+	  border-radius: 12px;
+	}
+	.footer {
+	  margin-top: 60px;
+	  font-size: 0.9rem;
+	  color: #fff;
+	  background-color: rgba(0, 0, 0, 0.5); /* halbtransparentes Schwarz */
+	  padding: 20px;
+	  border-radius: 12px;
+	}
+  </style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>
+				<span class="heart">❤️</span> 2025 – Our Marriage <span class="heart">❤️</span>
+			</h1>
+			<div class="section">
+				<div class="section-heading">Vienna and Munich</div>
+				<div class="side-by-side">
+					<div class="hover-block">
+						<img src="images/2025/1 - Vienna and Munich/1 Writing your name in the snow ice.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">End of 2024 actually, I wrote your name in the snow ❄️, it was new years with Dominik</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2025/1 - Vienna and Munich/2 Graduation cake.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Mah Graduation cake</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2025/1 - Vienna and Munich/3 finally reunited.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Finally reunited with the baby, even if only for short</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2025/1 - Vienna and Munich/4 we landed in munich.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Welcome to Munich!</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2025/1 - Vienna and Munich/5 the parks were nice.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">The parks were so chill</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2025/1 - Vienna and Munich/6 mwah goodbye germany.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Mwah! goodbye Germany</div>
+					</div>
+				</div>
+				<div class="section-heading">Our Wedding and Altaussee</div>
+				<div class="side-by-side">
+					<div class="hover-block">
+						<img src="images/2025/2 - Wedding and Altaussee/1 prepping our outfits.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Prepping our outfits</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2025/2 - Wedding and Altaussee/2 group photo time.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Group photo time</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2025/2 - Wedding and Altaussee/3 kiss me my bride.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Kiss me, my bride 💍</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2025/2 - Wedding and Altaussee/4 thank god youre so lightweight.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Thank god you’re so light 😅</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2025/2 - Wedding and Altaussee/5 wedding pic with the bros.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">With the bros</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2025/2 - Wedding and Altaussee/6 i loved your bridal bouquet.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">I loved your bridal bouquet🌸</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2025/2 - Wedding and Altaussee/7 welcome to altaussee.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Welcome to Altaussee</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2025/2 - Wedding and Altaussee/8 i cant believe we are married.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">I can’t believe we’re married 😭</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2025/2 - Wedding and Altaussee/9 snickers picnic on the lake.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Snickers picnic on the lake</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2025/2 - Wedding and Altaussee/10 cant get enough of you.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Can’t get enough of you</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2025/2 - Wedding and Altaussee/11 pam and maw are here huh.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Pam & Maw made it with taylor HAHAHA</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2025/2 - Wedding and Altaussee/12 mom sent us a cute wedding pic.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Mom sent us a cute wedding piccy</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2025/2 - Wedding and Altaussee/13 the resto arrangement was cute.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">The resto arrangement was so nice</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2025/2 - Wedding and Altaussee/14 i love your outfit here.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">I love your outfit in this pic✨</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2025/2 - Wedding and Altaussee/15 booboo.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">The booboo bear was always with us!</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2025/2 - Wedding and Altaussee/16 my gorgous wife getting tan.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">My gorgeous wife getting some tan</div>
+					</div>
+					<div class="hover-block">
+						<video controls><source src="images/2025/2 - Wedding and Altaussee/17 wedding dress in the flower field.mp4" type="video/mp4"/>
+					</div>
+					<div class="hover-block">
+						<video controls><source src="images/2025/2 - Wedding and Altaussee/18 feeding horsie.mp4" type="video/mp4"/>
+					</div>
+				</div>
+				<div class="aftertext">From months-long texting with grins on our faces, to endless calls, to meeting up every few months, and now to soon being together for good.<br>
+				We soon made it through the long-distance, and I couldn't be happier with you.<br>
+				I love you so much my baby. Happy birthday!!! This is only the beginning of our journey<br>💖💖</div>
+				<div class="timeline">
+					<a href="index.html">📍 Start page</a>
+					<a href="2019_1.html">📍 2019 – It begins</a>
+					<a href="2019_2.html">📍 2019 – Dogs, and first Holidays</a>
+					<a href="2020_1.html">📍 2020 – Covid era</a>
+					<a href="2021_1.html">📍 2021 – Maledives!</a>
+					<a href="2022_1.html">📍 2022 – Taguig & Mountains</a>
+					<a href="2022_2.html">📍 2022 – Venice & First Time in Austria</a>
+					<a href="2023_1.html">📍 2023 – Valenca & Mr. Brix</a>
+					<a href="2023_2.html">📍 2023 – Austria & Italy</a>
+					<a href="2024_1.html">📍 2024 – Our Engagement</a>
+					<a href="2025_1.html">📍 2025 – Our Wedding</a>
+				</div>
+				<div class="footer">
+					<p>Weee I love you babyyyy 💖💖 Happy birthdayyy💖💖</p>
+				</div>
+				<script>
+    function openFullscreen(img) {
+      const src = img.src;
+      const overlay = document.createElement('div');
+      overlay.style.position = 'fixed';
+      overlay.style.top = '0';
+      overlay.style.left = '0';
+      overlay.style.width = '100vw';
+      overlay.style.height = '100vh';
+      overlay.style.backgroundColor = 'rgba(0,0,0,0.9)';
+      overlay.style.display = 'flex';
+      overlay.style.alignItems = 'center';
+      overlay.style.justifyContent = 'center';
+      overlay.style.zIndex = '1000';
+
+      const fullImg = document.createElement('img');
+      fullImg.src = src;
+      fullImg.style.maxWidth = '90%';
+      fullImg.style.maxHeight = '90%';
+      fullImg.style.borderRadius = '12px';
+      fullImg.style.boxShadow = '0 0 20px rgba(255,255,255,0.4)';
+      fullImg.style.cursor = 'pointer';
+
+      overlay.appendChild(fullImg);
+      overlay.onclick = () => document.body.removeChild(overlay);
+
+      document.body.appendChild(overlay);
+    }
+  </script>
+			</body>
+		</html>

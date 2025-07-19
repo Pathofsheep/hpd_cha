@@ -7,11 +7,24 @@
 		<style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(to right, #f0f8ff, #e6f7ff);
-      color: #333;
+	  background: url('images/others/bg_puppies_2020.jpg') no-repeat center center fixed;
+	  background-size: cover;
+	  font-family: 'Arial', sans-serif;
+	  color: #333;
       text-align: center;
+	  position: relative;
+	  z-index: 1;
     }
+	body::before {
+	  content: "";
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  height: 100%;
+	  width: 100%;
+	  background: rgba(255, 255, 255, 0.2); /* Transparente weiße Ebene */
+	  z-index: -1;
+	}
     .container {
       padding: 40px 20px;
     }
@@ -35,6 +48,15 @@
       position: relative;
       max-width: 30%;
     }
+	.hover-block img, .hover-block video {
+	  height: 400px;
+	  width: 200px;
+	  object-fit: cover;
+	  border-radius: 12px;
+	  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	  transition: transform 0.3s ease;
+	  cursor: pointer;
+	}
     .hover-block img {
       width: 100%;
       border-radius: 12px;
@@ -45,6 +67,15 @@
     .hover-block img:hover {
       transform: scale(1.03);
     }
+	.hover-block video {
+	  width: 100%;
+	  max-height: 600px;
+	  object-fit: cover;
+	  border-radius: 12px;
+	  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	  transition: transform 0.3s ease;
+	  cursor: pointer;
+	}
     .hover-text {
       position: absolute;
       bottom: 10px;
@@ -76,111 +107,114 @@
       border-radius: 8px;
       cursor: pointer;
     }
-    .footer {
-      margin-top: 60px;
-      font-size: 0.9rem;
-      color: #666;
-    }
+	.footer {
+	  margin-top: 60px;
+	  font-size: 0.9rem;
+	  color: #fff;
+	  background-color: rgba(0, 0, 0, 0.5); /* halbtransparentes Schwarz */
+	  padding: 20px;
+	  border-radius: 12px;
+	}
   </style>
 	</head>
 	<body>
 		<div class="container">
 			<h2>2020 – Covid, oh no, weird times, but same love</h2>
 			<div class="section">
-				<div class="section-heading">Heidy joined the game right?</div>
+				<div class="section-heading">Heidy joined right? And you started at Bastion, and I started at CS!</div>
 				<div class="side-by-side">
 					<div class="hover-block">
-						<img src="2020/1 it starts slow/1 heidy as new helper.jpg" alt="Heidy" onclick="openFullscreen(this)"/>
-						<div class="hover-text">Heidy joins</div>
+						<img src="images/2020/1 it starts slow/1 heidy as new helper.jpg" alt="Heidy" onclick="openFullscreen(this)"/>
+						<div class="hover-text">HAHAHHAHA you have a hand for lazy helpers? HAHAHA</div>
 					</div>
 					<div class="hover-block">
-						<img src="2020/1 it starts slow/2 bastion girl.jpg" alt="Bastion" onclick="openFullscreen(this)"/>
+						<img src="images/2020/1 it starts slow/2 bastion girl.jpg" alt="Bastion" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Bastion girl mode</div>
 					</div>
 					<div class="hover-block">
-						<img src="2020/1 it starts slow/3 i moved to zurich.jpg" alt="Zurich" onclick="openFullscreen(this)"/>
+						<img src="images/2020/1 it starts slow/3 i moved to zurich.jpg" alt="Zurich" onclick="openFullscreen(this)"/>
 						<div class="hover-text">I moved to Zurich </div>
 					</div>
 					<div class="hover-block">
-						<img src="2020/1 it starts slow/4 cool chick cha.jpg" alt="Cool Cha" onclick="openFullscreen(this)"/>
+						<img src="images/2020/1 it starts slow/4 cool chick cha.jpg" alt="Cool Cha" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Cool chick Cha 💁‍♀️</div>
 					</div>
 					<div class="hover-block">
-						<img src="2020/1 it starts slow/5 record long calls.jpg" alt="Calls" onclick="openFullscreen(this)"/>
+						<img src="images/2020/1 it starts slow/5 record long calls.jpg" alt="Calls" onclick="openFullscreen(this)"/>
 						<div class="hover-text">So many long, long calls</div>
 					</div>
 					<div class="hover-block">
-						<img src="2020/1 it starts slow/6 with the girl.jpg" alt="With Girl" onclick="openFullscreen(this)"/>
+						<img src="images/2020/1 it starts slow/6 with the girl.jpg" alt="With Girl" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Always with the girl</div>
 					</div>
 					<div class="hover-block">
-						<img src="2020/1 it starts slow/7 and the boy.jpg" alt="With Boy" onclick="openFullscreen(this)"/>
+						<img src="images/2020/1 it starts slow/7 and the boy.jpg" alt="With Boy" onclick="openFullscreen(this)"/>
 						<div class="hover-text">And the boy too</div>
 					</div>
 				</div>
 				<div class="section-heading">🐶🐶🐶🐶🐶🐶🐶 (7?)</div>
 				<div class="side-by-side">
 					<div class="hover-block">
-						<img src="2020/2 new dogs are coming/1 they are pregnant.jpg" alt="Pregnant" onclick="openFullscreen(this)"/>
+						<img src="images/2020/2 new dogs are coming/1 they are pregnant.jpg" alt="Pregnant" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Kisses with the big belly</div>
 					</div>
 					<div class="hover-block">
-						<img src="2020/2 new dogs are coming/2 so many new family members.jpg" alt="Pups" onclick="openFullscreen(this)"/>
+						<img src="images/2020/2 new dogs are coming/2 so many new family members.jpg" alt="Pups" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Hugosh sooo small🐾</div>
 					</div>
 					<div class="hover-block">
-						<img src="2020/2 new dogs are coming/3 proud dog momma.jpg" alt="Momma" onclick="openFullscreen(this)"/>
+						<img src="images/2020/2 new dogs are coming/3 proud dog momma.jpg" alt="Momma" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Proud dog momma</div>
 					</div>
 					<div class="hover-block">
-						<img src="2020/2 new dogs are coming/4 the arrangements of them.jpg" alt="Arrangement" onclick="openFullscreen(this)"/>
+						<img src="images/2020/2 new dogs are coming/4 the arrangements of them.jpg" alt="Arrangement" onclick="openFullscreen(this)"/>
 						<div class="hover-text">How you arranged them HAHHAH</div>
 					</div>
 				</div>
-				<div class="section-heading">The world stopped, covid on the rise, but we had business as usual📲</div>
+				<div class="section-heading">The world stopped, covid on the rise, but we did our calls just as usual</div>
 				<div class="side-by-side">
 					<div class="hover-block">
-						<img src="2020/3 covid era/1 covid on the rise.jpg" alt="Covid" onclick="openFullscreen(this)"/>
+						<img src="images/2020/3 covid era/1 covid on the rise.jpg" alt="Covid" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Covid on the rise</div>
 					</div>
 					<div class="hover-block">
-						<img src="2020/3 covid era/2 but we are used to calling already.jpg" alt="Calls" onclick="openFullscreen(this)"/>
+						<img src="images/2020/3 covid era/2 but we are used to calling already.jpg" alt="Calls" onclick="openFullscreen(this)"/>
 						<div class="hover-text">But we foin</div>
 					</div>
 					<div class="hover-block">
-						<img src="2020/3 covid era/3 so we stay at home.jpg" alt="Stay Home" onclick="openFullscreen(this)"/>
+						<img src="images/2020/3 covid era/3 so we stay at home.jpg" alt="Stay Home" onclick="openFullscreen(this)"/>
 						<div class="hover-text">We stayed home</div>
 					</div>
 					<div class="hover-block">
-						<img src="2020/3 covid era/4 chilling with dogs.jpg" alt="Dogs" onclick="openFullscreen(this)"/>
+						<img src="images/2020/3 covid era/4 chilling with dogs.jpg" alt="Dogs" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Chilling with the exhausted momma</div>
 					</div>
 					<div class="hover-block">
-						<img src="2020/3 covid era/5 i learn to bake.jpeg" alt="Bake" onclick="openFullscreen(this)"/>
+						<img src="images/2020/3 covid era/5 i learn to bake.jpeg" alt="Bake" onclick="openFullscreen(this)"/>
 						<div class="hover-text">AAAnd I learned to bake 🍞</div>
 					</div>
 					<div class="hover-block">
-						<img src="2020/3 covid era/6 you are still the cutest of em all.jpg" alt="Cute" onclick="openFullscreen(this)"/>
+						<img src="images/2020/3 covid era/6 you are still the cutest of em all.jpg" alt="Cute" onclick="openFullscreen(this)"/>
 						<div class="hover-text">You're still the cutest</div>
 					</div>
 					<div class="hover-block">
-						<img src="2020/3 covid era/7 truely.jpg" alt="Truly" onclick="openFullscreen(this)"/>
+						<img src="images/2020/3 covid era/7 truely.jpg" alt="Truly" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Truly, yes</div>
 					</div>
 					<div class="hover-block">
-						<img src="2020/3 covid era/8 and we kill corona.jpg" alt="Corona" onclick="openFullscreen(this)"/>
+						<img src="images/2020/3 covid era/8 and we kill corona.jpg" alt="Corona" onclick="openFullscreen(this)"/>
 						<div class="hover-text">We killed it together</div>
 					</div>
 					<div class="hover-block">
-						<img src="2020/3 covid era/9 but your eyebrows what did you do.png" alt="Eyebrows" onclick="openFullscreen(this)"/>
+						<img src="images/2020/3 covid era/9 but your eyebrows what did you do.png" alt="Eyebrows" onclick="openFullscreen(this)"/>
 						<div class="hover-text">HAHAHAHA Remember? What did you do to your brows 😅</div>
 					</div>
 					<div class="hover-block">
-						<img src="2020/3 covid era/10 a slow year ends.jpg" alt="Slow Year" onclick="openFullscreen(this)"/>
+						<img src="images/2020/3 covid era/10 a slow year ends.jpg" alt="Slow Year" onclick="openFullscreen(this)"/>
 						<div class="hover-text">A slow year ends</div>
 					</div>
 					<div class="hover-block">
-						<img src="2020/3 covid era/11 also for fox.jpg" alt="Fox" onclick="openFullscreen(this)"/>
+						<img src="images/2020/3 covid era/11 also for fox.jpg" alt="Fox" onclick="openFullscreen(this)"/>
 						<div class="hover-text">Fox made it in the pic!</div>
 					</div>
 				</div>

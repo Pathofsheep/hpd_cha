@@ -7,11 +7,24 @@
 		<style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(to right, #f0f8ff, #e6f7ff);
-      color: #333;
+	  background: url('images/others/bg_2023_1_brix.jpg') no-repeat center center fixed;
+	  background-size: cover;
+	  font-family: 'Arial', sans-serif;
+	  color: #333;
       text-align: center;
+	  position: relative;
+	  z-index: 1;
     }
+	body::before {
+	  content: "";
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  height: 100%;
+	  width: 100%;
+	  background: rgba(255, 255, 255, 0.3); /* Transparente weiße Ebene */
+	  z-index: -1;
+	}
     .container {
       padding: 40px 20px;
     }
@@ -35,6 +48,15 @@
       position: relative;
       max-width: 30%;
     }
+	.hover-block img, .hover-block video {
+	  height: 400px;
+	  width: 200px;
+	  object-fit: cover;
+	  border-radius: 12px;
+	  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	  transition: transform 0.3s ease;
+	  cursor: pointer;
+	}
     .hover-block img {
       width: 100%;
       border-radius: 12px;
@@ -85,133 +107,132 @@
       border-radius: 8px;
       cursor: pointer;
     }
-    .footer {
-      margin-top: 60px;
-      font-size: 0.9rem;
-      color: #666;
-    }
+	.footer {
+	  margin-top: 60px;
+	  font-size: 0.9rem;
+	  color: #fff;
+	  background-color: rgba(0, 0, 0, 0.5); /* halbtransparentes Schwarz */
+	  padding: 20px;
+	  border-radius: 12px;
+	}
   </style>
 	</head>
 	<body>
 		<div class="container">
-			<h2>2022 – I had to split it cuz we did alot!</h2>
+			<h2>2023 – I had to split again, 2023 was so cute too 🤗🤗</h2>
 			<div class="section">
-				<div class="section-heading">Your birthdayyyy🎂🌊</div>
+				<div class="section-heading">Welcome to Nuvali 🏡</div>
 				<div class="side-by-side">
 					<div class="hover-block">
-						<img src="2022/2022 4 - your birthday/1 the beach in batangas was so nice.jpg" alt="Batangas beach" onclick="openFullscreen(this)"/>
-						<div class="hover-text">The beach in Batangas was sooo nice</div>
+						<img src="images/2023/1 welcome to nuvali/1 welcome to nuvali.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">The Nuvali mall was so nice️</div>
 					</div>
 					<div class="hover-block">
-						<img src="2022/2022 4 - your birthday/2 your booty looks so nice in these jeans.jpg" alt="Birthday jeans" onclick="openFullscreen(this)"/>
-						<div class="hover-text">As always you looking amazing 🥵</div>
+						<img src="images/2023/1 welcome to nuvali/2 in valenca.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">In front of Valenca️</div>
 					</div>
 					<div class="hover-block">
-						<img src="2022/2022 4 - your birthday/3 welcome to the beach.jpg" alt="Welcome beach" onclick="openFullscreen(this)"/>
-						<div class="hover-text">Welcome to the beach fam!</div>
+						<img src="images/2023/1 welcome to nuvali/3 the couch was so nice.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">This cozy couch was so nice️</div>
 					</div>
 					<div class="hover-block">
-						<img src="2022/2022 4 - your birthday/4 briiiix digging.jpg" alt="Brix digging" onclick="openFullscreen(this)"/>
-						<div class="hover-text">Brixx hard at work HAHAHA</div>
+						<img src="images/2023/1 welcome to nuvali/4 so many stray cats to feed.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Our daily walks to feed the many many strays 🐈</div>
 					</div>
 					<div class="hover-block">
-						<img src="2022/2022 4 - your birthday/5 the swings were so cool.jpg" alt="Swings" onclick="openFullscreen(this)"/>
-						<div class="hover-text">The swings were so cute, remember you almost didn't wanna go on</div>
+						<img src="images/2023/1 welcome to nuvali/5 good restaurants there.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">The restaurants especially pepper lunch oooof🍽️</div>
 					</div>
 					<div class="hover-block">
-						<img src="2022/2022 4 - your birthday/6 family pic.jpg" alt="Family" onclick="openFullscreen(this)"/>
-						<div class="hover-text">Group photo hahaha</div>
+						<img src="images/2023/1 welcome to nuvali/7 the sunset was nice.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">such a pretty sunset</div>
 					</div>
 					<div class="hover-block">
-						<img src="2022/2022 4 - your birthday/7 the day ends.jpg" alt="Evening" onclick="openFullscreen(this)"/>
-						<div class="hover-text">The sunset was so pretty</div>
+						<img src="images/2023/1 welcome to nuvali/6 our first walk at night.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Our first night walk 🌃</div>
 					</div>
 					<div class="hover-block">
-						<img src="2022/2022 4 - your birthday/8 i also prepped candles for your birthday.jpg" alt="Candles" onclick="openFullscreen(this)"/>
-						<div class="hover-text">I got something for you to blow hihihi🕯️</div>
+						<img src="images/2023/1 welcome to nuvali/8 curly hair giiirl.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Curly hair girl Waaaa</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2023/1 welcome to nuvali/9 badminton.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">We evenstarted playing badminton a bit!</div>
+					</div>
+					<div class="hover-block">
+						<video controls><source src="images/2023/1 welcome to nuvali/10 spinning the badminton outfit.mp4" type="video/mp4"/>
+					</div>
+					<div class="hover-block">
+						<img src="images/2023/1 welcome to nuvali/11 we meet up with sista maw and ate osang.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Meetup with Sista, Maw & ate Osang</div>
 					</div>
 				</div>
-				<div class="section-heading">Austria welcome to ma world girl🇦🇹</div>
-				<div class="side-by-side">
-					<div class="hover-block">
-						<img src="2022/2022 5 - austria/1 welcome to vienna love.jpg" alt="Vienna" onclick="openFullscreen(this)"/>
-						<div class="hover-text">Welcome to Vienna luv</div>
-					</div>
-					<div class="hover-block">
-						<img src="2022/2022 5 - austria/2 a cute couple.jpg" alt="Couple" onclick="openFullscreen(this)"/>
-						<div class="hover-text">We are so cute</div>
-					</div>
-					<div class="hover-block">
-						<img src="2022/2022 5 - austria/3 at the dome.jpg" alt="Stephansdom" onclick="openFullscreen(this)"/>
-						<div class="hover-text">At the dome – with the cute dress</div>
-					</div>
-					<div class="hover-block">
-						<img src="2022/2022 5 - austria/4 and at belvedere garden.jpg" alt="Belvedere" onclick="openFullscreen(this)"/>
-						<div class="hover-text">Belvedere gardens </div>
-					</div>
-					<div class="hover-block">
-						<img src="2022/2022 5 - austria/5 did i mention i love your outfits.jpg" alt="Outfits" onclick="openFullscreen(this)"/>
-						<div class="hover-text">did i mention i like your outfits?</div>
-					</div>
-					<div class="hover-block">
-						<img src="2022/2022 5 - austria/6 in burghausen.jpg" alt="Burghausen" onclick="openFullscreen(this)"/>
-						<div class="hover-text">In Burghausen, the pasta was sooo goood</div>
-					</div>
-					<div class="hover-block">
-						<img src="2022/2022 5 - austria/7 welcome to the south steria with parents.jpg" alt="Styria" onclick="openFullscreen(this)"/>
-						<div class="hover-text">South Styria with the parents 🍇</div>
-					</div>
-					<div class="hover-block">
-						<img src="2022/2022 5 - austria/8 and at the wineyard with mom.jpg" alt="Wineyard" onclick="openFullscreen(this)"/>
-						<div class="hover-text">Wineyard with mom ❤️</div>
-					</div>
-					<div class="hover-block">
-						<img src="2022/2022 5 - austria/9 a dog at the vineyard.jpg" alt="Dog" onclick="openFullscreen(this)"/>
-						<div class="hover-text">Remember the dog, he was so nice</div>
-					</div>
-					<div class="hover-block">
-						<img src="2022/2022 5 - austria/10 cute sheep.jpg" alt="Sheep" onclick="openFullscreen(this)"/>
-						<div class="hover-text">First time ma baby feeds sheep</div>
-					</div>
-					<div class="hover-block">
-						<img src="2022/2022 5 - austria/11 we got lost with johannes.jpg" alt="Lost" onclick="openFullscreen(this)"/>
-						<div class="hover-text">Got lost with Johannes 😂, gosh it went dark quick</div>
-					</div>
-					<div class="hover-block">
-						<img src="2022/2022 5 - austria/12 i love how happy you look.jpg" alt="Happy" onclick="openFullscreen(this)"/>
-						<div class="hover-text">You look so happy in this one aww🥹</div>
-					</div>
-					<div class="hover-block">
-						<img src="2022/2022 5 - austria/13 sadly time to drive to the airport.jpg" alt="Goodbye" onclick="openFullscreen(this)"/>
-						<div class="hover-text">Train back to Vienna, huu</div>
-					</div>
-				</div>
-				<div class="section-heading">End of the year</div>
-				<div class="side-by-side">
-					<div class="hover-block">
-						<img src="2022/2022 6 - EOY/1 cold christmas in austira.jpg" alt="Christmas" onclick="openFullscreen(this)"/>
-						<div class="hover-text">Cold Christmas in Austria 🎄</div>
-					</div>
-					<div class="hover-block">
-						<img src="2022/2022 6 - EOY/2 Goodbye 2022 from PH.jpg" alt="EOY" onclick="openFullscreen(this)"/>
-						<div class="hover-text">Goodbye from your fam</div>
-					</div>
-				</div>
-				<a href="index.html">
-					<button class="nav-button">⬅️ Back to Start</button>
-				</a>
-				<a href="2022_1.html">
-					<button class="nav-button">⬅️ Previous</button>
-				</a>
-				<a href="2023_1.html">
-					<button class="nav-button">Next ➡️</button>
-				</a>
 			</div>
-			<div class="footer">
-				<p>💖💖💖</p>
+			<div class="section">
+				<div class="section-heading">Brix joins us 🐶🐶</div>
+				<div class="side-by-side">
+					<div class="hover-block">
+						<img src="images/2023/2 brix joins us/1 brixy sleeps on our couch.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">So weak and sleepy on the couch at the beginning</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2023/2 brix joins us/2 we are meeting up with ross and regine.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">We met with Ross & Regine</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2023/2 brix joins us/3 brix naps with me while im studying.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Brix naps while I study HAHAHA</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2023/2 brix joins us/4 we buy cute masks.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Our masks were so cute</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2023/2 brix joins us/5 brix starts to feel better.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">He’s starting to feel better 🧡</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2023/2 brix joins us/7 we are tryking with our masks.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Tryke with our masks</div>
+					</div>
+					<div class="hover-block">
+						<video controls><source src="images/2023/2 brix joins us/6 he wants some of your breadtalk.mp4" type="video/mp4"/>
+					</div>
+					<div class="hover-block">
+						<video controls><source src="images/2023/2 brix joins us/8 new snacks for the mister.mp4" type="video/mp4"/>
+					</div>
+					<div class="hover-block">
+						<img src="images/2023/2 brix joins us/9 our house looks cute at night.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Our house at night 🌙</div>
+					</div>
+					<div class="hover-block">
+						<video controls><source src="images/2023/2 brix joins us/10 youre having fun with my hair.mp4" type="video/mp4"/>
+					</div>
+					<div class="hover-block">
+						<img src="images/2023/2 brix joins us/11 brixy is well again.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Brixy is back to himself 🐕</div>
+					</div>
+					<div class="hover-block">
+						<img src="images/2023/2 brix joins us/12 cuddly timee.jpg" onclick="openFullscreen(this)"/>
+						<div class="hover-text">Cuddly time 🫂</div>
+					</div>
+				</div>
 			</div>
+			<a href="index.html">
+				<button class="nav-button">⬅️ Back to Start</button>
+			</a>
+			<a href="2022_2.html">
+				<button class="nav-button">⬅️ Previous</button>
+			</a>
+			<a href="2023_2.html">
+				<button class="nav-button">Next ➡️</button>
+			</a>
 		</div>
-		<script>
+		<div class="footer">
+			<p>2023 we had nuvali, lots of brix, austria and italy! and you even did madeira too!🤗🤗</p>
+		</div>
+	</div>
+	<script>
     function openFullscreen(img) {
       const src = img.src;
       const overlay = document.createElement('div');
@@ -240,5 +261,5 @@
       document.body.appendChild(overlay);
     }
   </script>
-	</body>
+</body>
 </html>
